@@ -46,7 +46,7 @@ endif()
 set_target_properties(cutt PROPERTIES
       CUDA_SEPARABLE_COMPILATION ON
                                     )
-set_property(TARGET cutt PROPERTY CUDA_ARCHITECTURES 50 52 53 60 61 62 70 72 75 80 86)
+set_property(TARGET cutt PROPERTY CUDA_ARCHITECTURES 52 53 60 61 62 70 72 75 80 86)
 
 set_target_properties(cutt PROPERTIES CUDA_RESOLVE_DEVICE_SYMBOLS ON)
 set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -Xcudafe=--display_error_number -Xptxas -dlcm=ca -O3 -D_FORCE_INLINE -Xcompiler -fPIC")
